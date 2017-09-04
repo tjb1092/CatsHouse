@@ -1,0 +1,45 @@
+.wrapper
+  display: grid
+  grid-template-columns: repeat(5,1fr)
+  grid-gap: 2px
+  grid-auto-rows: minmax(50px, auto)
+
+.nav
+  grid-row: 1
+  grid-column: 1 / 6
+
+
+.overlay
+  grid-column: 1 / 6
+  grid-row: 2 / 5
+
+button
+  background-color: #eda6ad
+  color: white
+  text-shadow: 1px 1px black
+  height: 35px
+  width: 150px
+  border: 1px solid #737373 
+  margin-top: 85%
+  margin-left: auto
+  margin-right: auto
+  grid-row: 3
+  transition: 0.5s
+  &:hover
+    background-color: #e5808a
+    cursor: pointer
+#bathroom
+  grid-column: 1
+#closet
+  grid-column: 3
+#livingroom
+  grid-column: 2
+#bedroom
+  grid-column: 4
+#kitchen
+  grid-column: 5
+
+.footer
+  grid-column: 1 / 6
+  grid-row: 5
+
